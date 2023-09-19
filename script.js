@@ -16,8 +16,14 @@ for (let i = 0; i < arr.length; i++) {
  
 }
 articleLessArray.sort();
+const htmlUlElemnt =document.getElementsByTagName("ul")[0];
+htmlUlElemnt.id="band";
+
  for(let i of articleLessArray){
-	 console.log(i);
+	const elementLi = document.createElement("li");
+	 htmlUlElemnt.appendChild(elementLi);
+	 elementLi.innerText=i;  
+	 
  }
 
 
